@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.com/JamesCollerton/Art_Service_Front_End.svg?branch=master)](https://travis-ci.com/JamesCollerton/Art_Service_Front_End)
-[![codecov](https://codecov.io/gh/JamesCollerton/Art_Service_Front_End/branch/master/graph/badge.svg)](https://codecov.io/gh/JamesCollerton/Art_Service_Front_End)
+[![Build Status](https://travis-ci.com/JamesCollerton/Art_Service_Sourcing_Data_Service.svg?branch=master)](https://travis-ci.com/JamesCollerton/Art_Service_Sourcing_Data_Service)
+[![codecov](https://codecov.io/gh/JamesCollerton/Art_Service_Sourcing_Data_Service/branch/master/graph/badge.svg)](https://codecov.io/gh/JamesCollerton/Art_Service_Sourcing_Data_Service)
 
-# Art Service Front End
+# Art Service Sourcing Data Service
 
-This is the art service front end.
+This is the art service sourcing data service.
