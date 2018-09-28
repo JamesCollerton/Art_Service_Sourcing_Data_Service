@@ -4,3 +4,5 @@
 # Art Service Sourcing Data Service
 
 This is the art service sourcing data service.
+
+Port Number: 8082
