@@ -6,8 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /*
-TODO: Comments
-TODO: Swagger
+TODO: Clean up all code
+TODO: Make model feed into front end
 TODO: Testing
 TODO: Docker
  */
