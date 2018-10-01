@@ -1,4 +1,4 @@
-package com.artservicesourcingdataservice.artservicesourcingdataservice.Domain.DTO;
+package com.artservicesourcingdataservice.artservicesourcingdataservice.domain.dto;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,6 +9,9 @@ import javax.validation.constraints.NotBlank;
 
 import lombok.Data;
 
+/**
+ * This is the concrete implementation class for information around artwork pieces.
+ */
 @Entity
 @Table(name = "PIECE_INFORMATION")
 @Data
