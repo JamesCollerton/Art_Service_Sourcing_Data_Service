@@ -8,7 +8,7 @@ before_install:
 script:
   - ./mvnw clean install
   - bash <(curl -s https://codecov.io/bash)
-  - docker-compose build
+  - docker-compose build -e $(git rev-parse HEAD)
   - git log -5
 notifications:
     slack: j-coll-art-service:6CMGMmkkSYGiK2nAZpxpLKfF
