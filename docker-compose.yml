@@ -4,8 +4,6 @@ services:
     artservicesourcingdataservice:
         build: 
             context: ./
-            args: 
-                - TAG:snapshot
         ports:
             - 8082:8082
         image: artservicesourcingdataservice:${TAG}
