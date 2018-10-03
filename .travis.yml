@@ -8,6 +8,6 @@ before_install:
 script:
   - ./mvnw clean install
   - bash <(curl -s https://codecov.io/bash)
-  - docker build -t artservicesourcingdataservice .
+  - docker-compose build
 notifications:
     slack: j-coll-art-service:6CMGMmkkSYGiK2nAZpxpLKfF
