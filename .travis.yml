@@ -8,7 +8,8 @@ before_install:
 script:
   - ./mvnw clean install
   - bash <(curl -s https://codecov.io/bash)
-  - docker-compose build -e $(git rev-parse HEAD)
-  - git log -5
+  - echo "TAG=$(git rev-parse HEAD)" >> .env
+  - docker-compose build
+  - rm .env
 notifications:
     slack: j-coll-art-service:6CMGMmkkSYGiK2nAZpxpLKfF

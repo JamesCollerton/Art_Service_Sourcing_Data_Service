@@ -2,7 +2,10 @@ version: '3'
 
 services:
     artservicesourcingdataservice:
-        build: ./
+        build: 
+            context: ./
+            args: 
+                - TAG:snapshot
         ports:
             - 8082:8082
         image: artservicesourcingdataservice:${TAG}
