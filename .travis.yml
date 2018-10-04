@@ -9,6 +9,7 @@ script:
   - ./mvnw clean install
   - bash <(curl -s https://codecov.io/bash)
   - echo "TAG=" "$(git rev-parse HEAD)"  "." "$(mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version|grep -Ev '(^\[|Download\w+:)')" | tr -d '[:space:]' > .env
+  - cat .env
   - docker-compose build
   - rm .env
 notifications:
