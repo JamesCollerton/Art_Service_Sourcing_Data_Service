@@ -8,8 +8,8 @@ before_install:
 script:
   - ./mvnw clean install
   - bash <(curl -s https://codecov.io/bash)
-  - echo "Git Commit  $(git rev-parse HEAD)"
-  - echo "Maven Version  $(mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version|grep -Ev '(^\[|Download\w+:)')"
+  - echo "Downloading maven dependencies to evaluate project number"
+  - echo "$(mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version|grep -Ev '(^\[|Download\w+:)')"
   - echo "TAG=" "$(git rev-parse HEAD)"  "." "$(mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version|grep -Ev '(^\[|Download\w+:)')" | tr -d '[:space:]' > .env
   - cat .env
   - docker-compose build
