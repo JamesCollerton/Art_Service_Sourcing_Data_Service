@@ -8,12 +8,13 @@ before_install:
 addons:
   apt:
     sources:
-      - deadsnakes # source required so it finds the package definition below
+      - deadsnakes 
     packages:
-      - python3.5
+      - python3.4
 script:
   - ./mvnw clean install
   - bash <(curl -s https://codecov.io/bash)
+after_success:
   - echo "TAG=latest" > .env
   - docker --version
   - pip install --user awscli
