@@ -5,12 +5,17 @@ services:
   - docker
 before_install:
   - chmod +x mvnw
+addons:
+  apt:
+    sources:
+      - deadsnakes # source required so it finds the package definition below
+    packages:
+      - python3.5
 script:
   - ./mvnw clean install
   - bash <(curl -s https://codecov.io/bash)
   - echo "TAG=latest" > .env
   - docker --version
-  - pip install 'requests[security]'
   - pip install --user awscli
   - export PATH=$PATH:$HOME/.local/bin
   - eval $(aws ecr get-login --region us-east-1) 
