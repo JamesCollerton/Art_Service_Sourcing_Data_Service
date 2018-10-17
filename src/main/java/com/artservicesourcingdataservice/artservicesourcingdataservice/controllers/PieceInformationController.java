@@ -42,7 +42,7 @@ public class PieceInformationController {
     public ResponseEntity<List<PieceInformation>> getAllPieceInformation() {
 
         List<PieceInformation> pieceInformationList =
-                new IterableUtilities().<PieceInformation, MutablePieceInformation>convertIterableToArrayList(pieceInformationRepository.findAll());
+                new IterableUtilities().convertIterableToArrayList(pieceInformationRepository.findAll());
 
         return new ResponseEntity<>(pieceInformationList, HttpStatus.OK);
 
