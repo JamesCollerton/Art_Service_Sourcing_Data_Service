@@ -21,7 +21,7 @@ script:
   - pip install --user awscli
   - export PATH=$PATH:$HOME/.local/bin
   - eval $(aws ecr get-login --no-include-email --region us-east-1) 
-  - aws ecs update-service --cluster ecsvpccluster --region us-east-1 --force-new-deployment --service artservicesourcingdataecsservice
+  - aws ecs update-service --cluster ecs-vpc-cluster --region us-east-1 --force-new-deployment --service art-service-sourcing-data-ecs-service
   - docker-compose build
   - docker tag artservicesourcingdataservice:latest $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/artservicesourcingdataservice:latest
   - docker push $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/artservicesourcingdataservice:latest
