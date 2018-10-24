@@ -12,3 +12,5 @@ INSERT INTO PIECE_INFORMATION (ID, TITLE, DESCRIPTION, IMAGE_URL)
 VALUES (5l, 'Piece Five', 'Description Five', 'imageUrl Five');
 INSERT INTO PIECE_INFORMATION (ID, TITLE, DESCRIPTION, IMAGE_URL)
 VALUES (6l, 'Piece Six', 'Description Six', 'imageUrl Six');
+INSERT INTO PIECE_INFORMATION (ID, TITLE, DESCRIPTION, IMAGE_URL)
+VALUES (7l, 'Piece Seven', 'Description Seven', 'imageUrl Seven');
