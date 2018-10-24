@@ -8,5 +8,3 @@ INSERT INTO PIECE_INFORMATION (ID, TITLE, DESCRIPTION, IMAGE_URL)
 VALUES (3l, 'Piece Three', 'Description Three', 'imageUrl Three');
 INSERT INTO PIECE_INFORMATION (ID, TITLE, DESCRIPTION, IMAGE_URL)
 VALUES (4l, 'Piece Four', 'Description Four', 'imageUrl Four');
-INSERT INTO PIECE_INFORMATION (ID, TITLE, DESCRIPTION, IMAGE_URL)
-VALUES (5l, 'Piece Five', 'Description Five', 'imageUrl Five');
