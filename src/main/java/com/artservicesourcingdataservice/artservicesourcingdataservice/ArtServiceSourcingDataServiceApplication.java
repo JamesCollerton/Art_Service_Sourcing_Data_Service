@@ -5,11 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-/*
-TODO: Clean up all code
-TODO: Make model feed into front end
-TODO: Testing
-TODO: Docker
+/**
+ * ArtServiceSourcingDataServiceApplication
+ *
+ * This is the reference data service used by the Art Service. It is responsible for all connections to the
+ * database and sourcing all data.
  */
 @SpringBootApplication
 @EnableEurekaClient
