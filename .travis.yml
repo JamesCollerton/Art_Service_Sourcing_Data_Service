@@ -21,10 +21,10 @@ script:
   - pip install --user awscli
   - export PATH=$PATH:$HOME/.local/bin
   - eval $(aws ecr get-login --no-include-email --region us-east-1) 
-  - aws ecs update-service --cluster ecs-vpc-cluster --region us-east-1 --force-new-deployment --service art-service-sourcing-data-ecs-service
   - docker-compose build
-  - docker tag art-service-sourcing-data-service:latest $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/art-service-sourcing-data-service:latest
+  - docker tag artservicesourcingdataservice:latest $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/art-service-sourcing-data-service:latest
   - docker push $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/art-service-sourcing-data-service:latest
+  - aws ecs update-service --cluster ecs-vpc-cluster --region us-east-1 --force-new-deployment --service art-service-sourcing-data-ecs-service
   - rm .env
 notifications:
     slack: j-coll-art-service:6CMGMmkkSYGiK2nAZpxpLKfF
