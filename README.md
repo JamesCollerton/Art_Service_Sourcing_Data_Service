@@ -37,3 +37,7 @@ H2 is an embedded, in-memory Java SQL database. Currently we have no concrete da
 ## Lombok
 
 Lombok is a library used to generate getters, setters, equals and hashcode methods automatically.
+
+## Spring Actuator
+
+Actuator brings production-ready features to our application. This includes monitoring our app, gathering metrics, understanding traffic or the state of our database. It is mainly used to expose operational information about the running application – health, metrics, info, dump, env, etc.
