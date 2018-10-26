@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.com/JamesCollerton/Art_Service_Sourcing_Data_Service.svg?branch=master)](https://travis-ci.com/JamesCollerton/Art_Service_Sourcing_Data_Service)
-[![codecov](https://codecov.io/gh/JamesCollerton/Art_Service_Sourcing_Data_Service/branch/master/graph/badge.svg)](https://codecov.io/gh/JamesCollerton/Art_Service_Sourcing_Data_Service)
+[![Build Status](https://travis-ci.com/JamesCollerton/Art_Service_Sourcing_Data_Service.svg?token=KdiR1xs9jsHVYsSCNwx4&branch=master)](https://travis-ci.com/JamesCollerton/Art_Service_Sourcing_Data_Service)
+[![codecov](https://codecov.io/gh/JamesCollerton/Art_Service_Sourcing_Data_Service/branch/master/graph/badge.svg?token=CB1mi1isXx)](https://codecov.io/gh/JamesCollerton/Art_Service_Sourcing_Data_Service)
 
 # Art Service Sourcing Data Service
 
