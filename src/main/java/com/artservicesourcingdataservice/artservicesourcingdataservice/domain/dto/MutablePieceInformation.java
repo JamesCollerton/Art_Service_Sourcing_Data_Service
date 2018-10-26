@@ -17,16 +17,28 @@ import lombok.Data;
 @Data
 public class MutablePieceInformation implements PieceInformation {
 
+    /**
+     * Id of the piece
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    /**
+     * Title of the piece
+     */
     @NotBlank(message = "Title required")
     private String title;
 
+    /**
+     * Description of the piece
+     */
     @NotBlank(message = "Description required")
     private String description;
 
+    /**
+     * URL where the image of the piece is stored
+     */
     @NotBlank(message = "Image URL required")
     private String imageUrl;
 

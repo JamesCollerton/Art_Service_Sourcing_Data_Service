@@ -1,10 +1,6 @@
 package com.artservicesourcingdataservice.artservicesourcingdataservice.controllers;
 
 import java.util.List;
-
-import com.artservicesourcingdataservice.artservicesourcingdataservice.domain.dto.MutablePieceInformation;
-import com.artservicesourcingdataservice.artservicesourcingdataservice.utilities.iterableutilities.IterableUtilities;
-import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.artservicesourcingdataservice.artservicesourcingdataservice.domain.dto.PieceInformation;
 import com.artservicesourcingdataservice.artservicesourcingdataservice.repositories.PieceInformationRepository;
+import com.artservicesourcingdataservice.artservicesourcingdataservice.utilities.iterableutilities.IterableUtilities;
+import io.swagger.annotations.ApiOperation;
 
 /**
  * This is the controller for requests regarding information around artwork pieces.

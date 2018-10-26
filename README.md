@@ -8,7 +8,7 @@ This is the art service sourcing data service and is responsible for bringing re
 Detail | Value
 ------------ | -------------
 Port Number | 8082
-Spring Application Name | spring.application.name=art-service-sourcing-data-service
+Spring Application Name | art-service-sourcing-data-service
 
 The core dependencies of the project are:
 
