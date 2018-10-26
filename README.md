@@ -3,7 +3,7 @@
 
 # Art Service Sourcing Data Service
 
-This is the art service sourcing data service, responsible for bringing reference data back from the database.
+This is the art service sourcing data service and is responsible for bringing reference data back from the database.
 
 Detail | Value
 ------------ | -------------
@@ -16,11 +16,11 @@ The core dependencies of the project are:
 
 Spring Data is used to ease data access technologies, relational and non-relational databases, map-reduce frameworks, and cloud-based data services. Particularly within this project we have used Spring Data JPA.
 
-Spring Data JPA, part of the larger Spring Data family, makes it easy to easily implement JPA based repositories. It makes it easier to build Spring-powered applications that use data access technologies. As a developer you write your repository interfaces, including custom finder methods, and Spring will provide the implementation automatically.
+Spring Data JPA is part of the larger Spring Data family and makes it easy to implement JPA based repositories. It makes it easier to build Spring-powered applications that use data access technologies. As a developer you write your repository interfaces, including custom finder methods, and Spring will provide the implementation automatically.
 
 ## Eureka and Feign
 
-Eureka provides client-side service discovery, allowing services to find and communicate with each other without hard coding hostname and port. The only ‘fixed point’ in such an architecture consists of a service registry with which each service has to register.
+Eureka provides client-side service discovery allowing services to find and communicate with each other without hard coding hostname and port. The only ‘fixed point’ in such an architecture consists of a service registry with which each service has to register.
 
 With Netflix Eureka each client can simultaneously act as a server, to replicate its status to a connected peer. In other words, a client retrieves a list of all connected peers of a service registry and makes all further requests to any other services through a load-balancing algorithm
 
