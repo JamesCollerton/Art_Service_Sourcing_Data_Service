@@ -1,5 +1,6 @@
 package com.artservicesourcingdataservice.artservicesourcingdataservice.controllers;
 
+import java.awt.PageAttributes;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -36,7 +37,9 @@ public class PieceInformationController {
             notes = "Returns a list of piece information for all artwork in the collection.",
             response = List.class
     )
-    @GetMapping
+    @GetMapping(
+            produces = "application/json"
+    )
     public ResponseEntity<List<PieceInformation>> getAllPieceInformation() {
 
         List<PieceInformation> pieceInformationList =
