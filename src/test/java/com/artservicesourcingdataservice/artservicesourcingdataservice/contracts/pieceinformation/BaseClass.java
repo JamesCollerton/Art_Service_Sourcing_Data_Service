@@ -15,16 +15,29 @@ import com.artservicesourcingdataservice.artservicesourcingdataservice.domain.dt
 import com.artservicesourcingdataservice.artservicesourcingdataservice.repositories.PieceInformationRepository;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 
+/**
+ * This is the BaseClass for the CDC testing. It autowires a PieceInformationController
+ * and also a mock repository to return test piece information.
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = ArtServiceSourcingDataServiceApplication.class)
 public class BaseClass {
 
+    /**
+     * Autowired controller for piece information
+     */
     @Autowired
     private PieceInformationController pieceInformationController;
 
+    /**
+     * Mock piece information repository we can use to return test data
+     */
     @MockBean
     private PieceInformationRepository pieceInformationRepository;
 
+    /**
+     * Used to set up the mock piece repository to return test data.
+     */
     @Before
     public void setup() {
         RestAssuredMockMvc.standaloneSetup(pieceInformationController);
