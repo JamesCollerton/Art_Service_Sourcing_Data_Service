@@ -142,7 +142,7 @@
 				<version>${spring-cloud-contract.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<baseClassForTests>com.artservicesourcingdataservice.artservicesourcingdataservice.contracts.pieceinformation.BaseClass</baseClassForTests>
+					<baseClassForTests>com.artservicesourcingdataservice.artservicesourcingdataservice.contracts.BaseClass</baseClassForTests>
 				</configuration>
 			</plugin>
 		</plugins>

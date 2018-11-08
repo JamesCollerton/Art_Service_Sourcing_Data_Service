@@ -1,4 +1,4 @@
-package com.artservicesourcingdataservice.artservicesourcingdataservice.contracts.pieceinformation;
+package com.artservicesourcingdataservice.artservicesourcingdataservice.contracts;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

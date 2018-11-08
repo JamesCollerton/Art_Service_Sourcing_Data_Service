@@ -1,0 +1,22 @@
+request:
+  method: GET
+  url: /pieces
+response:
+  status: 200
+  body:
+        [   {
+              "id": "1",
+              "title": "Title One",
+              "description": "Description One",
+              "imageUrl": "Image URL One"
+            },
+            {
+              "id": "2",
+              "title": "Title Two",
+              "description": "Description Two",
+              "imageUrl": "Image URL Two"
+            }
+        ]
+
+  headers:
+    Content-Type: application/json;charset=UTF-8
